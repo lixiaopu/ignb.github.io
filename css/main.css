@@ -513,10 +513,10 @@ h5, h6          { font-weight: bolder }
 }
 .top .date{
     display: block;
-    
+    width: 100%;color: #4b4848;
     font-family: "raleway-bold", arial;
     font-size: 10px;
-    background: rgba(255, 255, 255, .7);
+    
     padding: 20px;
     text-transform: uppercase;
     line-height: 30px;
