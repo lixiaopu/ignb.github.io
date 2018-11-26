@@ -153,7 +153,7 @@ ps: 英文注释是官方解释">
             <span class="date">
               &nbsp; | &nbsp; {{ __('item.date') }}
               <time itemprop="dateUpdated" datetime="{{ moment(item.date).format() }}" content="{{ date(item.date, config.date_format) }}">
-                {{ date(post.updated, config.date_format) }}
+                {{ date(item.date, config.date_format) }}
               </time>
             </span>
           
