@@ -149,50 +149,12 @@ ps: 英文注释是官方解释">
 
     <section class="wrapper">
         <div class="content">
-          <div class="post-meta">
-            <span class="post-time">
-              <span class="post-meta-item-text">发表于</span>
-              <time title="date">
-                Fri Nov 16 2018 17:10:24 GMT+0200
-              </time>
-
-
-
-              <span class="post-meta-divider">|</span>
-
-
-
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-
-                <span class="post-meta-item-text">更新于</span>
-
-              <time title="更新于">
-                Mon Nov 26 2018 11:42:24 GMT+0200
-              </time>
-
+          <span class="date">
+            &nbsp; | &nbsp; {{ __('item.updated') }}
+            <time itemprop="date" datetime="{{ moment(item.date).format() }}" content="{{ date(item.date, config.date_format) }}">
+              {{ date(item.date, config.date_format) }}
+            </time>
           </span>
-
-
-            <span class="post-category">
-
-              <span class="post-meta-divider">|</span>
-
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-
-                <span class="post-meta-item-text">分类于</span>
-
-
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">[object Object]</span>
-                  </a>
-                </span>
-            </span>
-        </div>
 
             <!-- Gallery -->
             
