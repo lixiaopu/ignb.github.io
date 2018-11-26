@@ -516,10 +516,10 @@ h5, h6          { font-weight: bolder }
     width: 100%;color: #4b4848;
     font-family: "raleway-bold", arial;
     font-size: 10px;
-    
-    padding: 20px;
+    background: rgba(255, 255, 255, .7);
+    padding: 10px;
     text-transform: uppercase;
-    line-height: 30px;
+    line-height: 10px;
 
     overflow: hidden;
 
