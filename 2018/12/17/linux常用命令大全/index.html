@@ -10,6 +10,12 @@
 
     <!--Description-->
     
+        <meta name="description" content="语法rm [options] 文件或文件夹名
+option:-i 删除前逐一询问确认。-f 即使原档案属性设为唯读，亦直接删除，无需逐一确认。-r 将目录及以下之档案亦逐一删除。
+rm *删除当前文件夹下所有文件，如果当前文件夹下有目录则用以下语句
+rm -r *删除当前文件夹下所有文件以及文件夹
+">
+    
 
     <!--Author-->
     
@@ -17,6 +23,8 @@
     
 
     <!--Open Graph Title-->
+    
+        <meta property="og:title" content="linux命令行删除文件或文件夹">
     
 
     <!--Open Graph Site Name-->
@@ -29,7 +37,7 @@
 
     <!-- Title -->
     
-    <title>Archives: 2018/11 - 北欧少女</title>
+    <title>linux命令行删除文件或文件夹 - 北欧少女</title>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/reset.css">
@@ -119,32 +127,97 @@
 
 
 <!-- Main Content -->
-
-
 <section class="main clearfix">
-    <section class="wrapper">
-        <div class="content archives">
+
+    <section class="top" style="background: url('http://placehold.it/1300x500');">
+        <div class="wrapper content_header clearfix">
             
-            <ul class="archive-list">
+
+<div class="work_nav">
+
+    <ul class="btn clearfix">
+        
+        <li><a class="previous disabled"></a></li>
+        
+        <li><a href="/" class="grid" data-title="Portfolio"></a></li>
+        
+        <li><a href="/2018/11/26/python与c/" class="next" data-title="python与c++的区别"></a></li>
+        
+    </ul>
+
+</div><!-- end work_nav -->
+            <h1 class="title">linux命令行删除文件或文件夹</h1>
+            <div class="date">
+              
+                <span>
+                  发表于
+                  <time>
+                    2018-12-17
+                  </time>
+                  &nbsp; | &nbsp;
+                  更新于
+                  <time>
+                    2018-12-17
+                  </time>
+                </span>
+              
+            </div>
+        </div>
+    </section><!-- end top -->
+
+    <section class="wrapper">
+        <div class="content">
+
+
+            <!-- Gallery -->
+            
+
+            <!-- Content -->
+            <p>语法<br>rm [options] 文件或文件夹名</p>
+<p>option:<br>-i 删除前逐一询问确认。<br>-f 即使原档案属性设为唯读，亦直接删除，无需逐一确认。<br>-r 将目录及以下之档案亦逐一删除。</p>
+<p>rm *<br>删除当前文件夹下所有文件，如果当前文件夹下有目录则用以下语句</p>
+<p>rm -r *<br>删除当前文件夹下所有文件以及文件夹</p>
+<p>rm 某文件.后缀<br>删除当前文件夹下某文件</p>
+<p>rm -r 某文件夹<br>删除某文件夹</p>
+<p>rm -rf 某文件或文件夹<br>直接删除，无需确认</p>
+
+
+            <!-- Tags -->
+            
+
+
+<div class="tags">
+    <a href="/tags/linux常用命令大全/">linux常用命令大全</a>
+</div>
+
+
+
+            <!-- Comments -->
+            <div>
                 
-                    <li>
-    <a href="/2018/11/26/python与c/">python与c++的区别</a>
-</li>
-                
-                    <li>
-    <a href="/2018/11/16/ros/">ROS学习笔记(一)：一个简单的ros程序有哪些必不可少的元素</a>
-</li>
-                
-                    <li>
-    <a href="/2018/12/17/linux常用命令大全/">linux命令行删除文件或文件夹</a>
-</li>
-                
-            </ul>
+    <hr>
+    <h3>Comments:</h3>
+    <div id="valine"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@1.1.7/dist/Valine.min.js"></script>
+    <script>
+    new Valine({
+        el: '#valine' ,
+        notify:false,
+        verify:false,
+        app_id: 'CqDujROjV511tS83FwzQgG5c-gzGzoHsz',
+        app_key: 'Xdl14lmbMYIRVXzjYes4niyO',
+        placeholder: 'Just go go',
+        path:window.location.pathname,
+        avatar:'mm'
+    });
+    </script>
+
+
+            </div>
         </div><!-- end content -->
     </section>
 </section><!-- end main -->
-
-
 
 
 <!-- After footer scripts -->
