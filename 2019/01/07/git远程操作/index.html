@@ -10,6 +10,11 @@
 
     <!--Description-->
     
+        <meta name="description" content="管理文件添加文件到git仓库$ git add file1.txt$ git add file2.txt file3.txt$ git commit -m “add 3 files.”
+查看提交历史记录(过去)$ git log
+查看每一次命令历史(未来)$ git reflog
+HEAD指向的版本">
+    
 
     <!--Author-->
     
@@ -17,6 +22,8 @@
     
 
     <!--Open Graph Title-->
+    
+        <meta property="og:title" content="git远程操作">
     
 
     <!--Open Graph Site Name-->
@@ -29,7 +36,7 @@
 
     <!-- Title -->
     
-    <title>Archives: 2018 - 北欧少女</title>
+    <title>git远程操作 - 北欧少女</title>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/reset.css">
@@ -131,40 +138,106 @@
 
 
 <!-- Main Content -->
-
-
 <section class="main clearfix">
-    <section class="wrapper">
-        <div class="content archives">
+
+    <section class="top" style="background: url('http://placehold.it/1300x500');">
+        <div class="wrapper content_header clearfix">
             
-            <ul class="archive-list">
+
+<div class="work_nav">
+
+    <ul class="btn clearfix">
+        
+        <li><a class="previous disabled"></a></li>
+        
+        <li><a href="/" class="grid" data-title="Portfolio"></a></li>
+        
+        <li><a href="/2018/12/20/python绘图/" class="next" data-title="python Matplotlib..."></a></li>
+        
+    </ul>
+
+</div><!-- end work_nav -->
+            <h1 class="title">git远程操作</h1>
+            <div class="date">
+              
+                <span>
+                  发表于
+                  <time>
+                    2019-01-07
+                  </time>
+                  &nbsp; | &nbsp;
+                  更新于
+                  <time>
+                    2019-01-07
+                  </time>
+                </span>
+              
+            </div>
+        </div>
+    </section><!-- end top -->
+
+    <section class="wrapper">
+        <div class="content">
+
+
+            <!-- Gallery -->
+            
+
+            <!-- Content -->
+            <h5 id="管理文件"><a href="#管理文件" class="headerlink" title="管理文件"></a>管理文件</h5><p>添加文件到git仓库<br>$ git add file1.txt<br>$ git add file2.txt file3.txt<br>$ git commit -m “add 3 files.”</p>
+<p>查看提交历史记录(过去)<br>$ git log</p>
+<p>查看每一次命令历史(未来)<br>$ git reflog</p>
+<p>HEAD指向的版本就是当前版本，上一个版本就是HEAD^，上上一个版本就是HEAD^^，往上100个版本写成HEAD~100<br>$ git reset –hard commit_id</p>
+<p>查看当前状态<br>$ git status</p>
+<p>在工作区乱改文件，但还没有add<br>$ git checkout – file</p>
+<p>在工作区乱改文件，并且add到暂存区<br>$ git reset HEAD <file><br>$ git checkout – file</file></p>
+<p>删除文件<br>$ git rm test.txt<br>$ git commit -m “remove test.txt”</p>
+<p>恢复误删的文件<br>$ git checkout – test.txt</p>
+<h5 id="管理远程库"><a href="#管理远程库" class="headerlink" title="管理远程库"></a>管理远程库</h5><p>要关联一个远程库，使用命令<br>$ git remote add origin git@server-name:path/repo-name.git</p>
+<p>关联后，第一次推送master分支的所有内容<br>$ git push -u origin master</p>
+<p>此后，每次本地提交后，可以使用命令<br>$ git push origin master</p>
+<p>从远程主机克隆一个版本库<br>$ git clone 版本库的网址</p>
+<h5 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h5><p>创建并切换分支<br>$ git checkout -b dev<br>等同于<br>$ git branch dev<br>$ git checkout dev</p>
+<p>查看当前分支<br>$ git branch</p>
+<p>在dev上add，commit后回到master分支，合并到master，并删除dev<br>$ git checkout master<br>$ git merge dev<br>$ git branch -d dev</p>
+
+
+            <!-- Tags -->
+            
+
+
+<div class="tags">
+    <a href="/tags/一些很重要的知识/">一些很重要的知识</a>
+</div>
+
+
+
+            <!-- Comments -->
+            <div>
                 
-                    <li>
-    <a href="/2019/01/07/git远程操作/">git远程操作</a>
-</li>
-                
-                    <li>
-    <a href="/2018/12/20/python绘图/">python Matplotlib 画图教程详解</a>
-</li>
-                
-                    <li>
-    <a href="/2018/12/17/linux删除文件/">linux命令行删除文件或文件夹</a>
-</li>
-                
-                    <li>
-    <a href="/2018/11/16/ros1/">ROS学习笔记(一)：一个简单的ros程序有哪些必不可少的元素</a>
-</li>
-                
-                    <li>
-    <a href="/2018/11/26/python与c++/">Python与C++的基础语法对比</a>
-</li>
-                
-            </ul>
+    <hr>
+    <h3>Comments:</h3>
+    <div id="valine"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@1.1.7/dist/Valine.min.js"></script>
+    <script>
+    new Valine({
+        el: '#valine' ,
+        notify:false,
+        verify:false,
+        app_id: 'CqDujROjV511tS83FwzQgG5c-gzGzoHsz',
+        app_key: 'Xdl14lmbMYIRVXzjYes4niyO',
+        placeholder: 'Just go go',
+        path:window.location.pathname,
+        avatar:'mm'
+    });
+    </script>
+
+
+            </div>
         </div><!-- end content -->
     </section>
 </section><!-- end main -->
-
-
 
 
 <!-- After footer scripts -->
